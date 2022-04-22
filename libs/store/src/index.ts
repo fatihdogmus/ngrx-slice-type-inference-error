@@ -1,3 +1,3 @@
 export * from './lib/store.module';
-export * from './lib/counter-slice';
+export {initialCounterState,CounterSelectors,CounterFeature,CounterState,CounterActions} from './lib/counter-slice';
 console.log("asd")
