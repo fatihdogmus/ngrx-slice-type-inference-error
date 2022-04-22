@@ -1,0 +1,30 @@
+{
+  "root": "apps/ngrx-slice-type-inference-error-e2e",
+  "sourceRoot": "apps/ngrx-slice-type-inference-error-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/ngrx-slice-type-inference-error-e2e/cypress.json",
+        "devServerTarget": "ngrx-slice-type-inference-error:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "ngrx-slice-type-inference-error:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "apps/ngrx-slice-type-inference-error-e2e/**/*.{js,ts}"
+        ]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["ngrx-slice-type-inference-error"]
+}
