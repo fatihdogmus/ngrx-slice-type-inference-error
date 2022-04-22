@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "ngrx-slice-type-inference-error": "apps/ngrx-slice-type-inference-error",
-    "ngrx-slice-type-inference-error-e2e": "apps/ngrx-slice-type-inference-error-e2e"
+    "ngrx-slice-type-inference-error-e2e": "apps/ngrx-slice-type-inference-error-e2e",
+    "store": "libs/store"
   }
 }

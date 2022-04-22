@@ -5,9 +5,10 @@
   "prefix": "ngrx-slice-type-inference-error",
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser",
+      "executor": "@nrwl/angular:webpack-browser",
       "outputs": ["{options.outputPath}"],
       "options": {
+        "buildLibsFromSource": false,
         "outputPath": "dist/apps/ngrx-slice-type-inference-error",
         "index": "apps/ngrx-slice-type-inference-error/src/index.html",
         "main": "apps/ngrx-slice-type-inference-error/src/main.ts",
